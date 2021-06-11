@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DespatchAdvice xmlns="urn:oasis:names:specification:ubl:schema:xsd:DespatchAdvice-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2">
+	<cbc:CustomizationID>urn:fdc:peppol.eu:poacc:trns:despatch_advice:3#conformant#urn:stadlar.is:retann</cbc:CustomizationID>  <!-- tir16r-002 -->
+	<cbc:ProfileID>urn:stadlar.is:bis:retann:3</cbc:ProfileID>
+	<cbc:ID>Vöruskilanúmer</cbc:ID> <!-- tir16r-003 -->
+	<cbc:IssueDate>2020-12-10</cbc:IssueDate> <!-- tir16r-004 -->
+	<cbc:DespatchAdviceTypeCode>729</cbc:DespatchAdviceTypeCode> <!-- tir16r-r01 Extension -->
+	<cac:OrderReference>
+		<cbc:ID>PO012345</cbc:ID> <!-- tir16r-006 -->
+	</cac:OrderReference>
+	<cac:AdditionalDocumentReference> <!-- tir16r-r02 Extension -->
+		<cbc:ID>IV001</cbc:ID>
+		<cbc:DocumentTypeCode>380</cbc:DocumentTypeCode >
+	</cac:AdditionalDocumentReference>
+	<cac:DespatchSupplierParty>
+		<cac:Party>
+			<cbc:EndpointID schemeID="0088">7300010000001</cbc:EndpointID> <!-- tir16r-071 -->
+			<cac:PartyIdentification>
+				<cbc:ID schemeID="0088">7300010000001</cbc:ID>  <!-- tir16r-p001 -->
+			</cac:PartyIdentification>
+			<cac:PartyLegalEntity>
+				<cbc:RegistrationName>Verslunin ehf.</cbc:RegistrationName> <!-- tir16r-007 Peppol krafa -->
+			</cac:PartyLegalEntity>
+		</cac:Party>
+	</cac:DespatchSupplierParty>
+	<cac:DeliveryCustomerParty>
+		<cac:Party>
+			<cbc:EndpointID schemeID="0088">5798000000124</cbc:EndpointID> <!-- tir16r-016 -->
+			<cac:PartyIdentification>
+				<cbc:ID schemeID="0088">5790000435951</cbc:ID> <!-- tir16r-015 -->
+			</cac:PartyIdentification>
+			<cac:PartyLegalEntity>
+				<cbc:RegistrationName>Vörusalinn ehf</cbc:RegistrationName> <!-- tir16r-014 Peppol krafa -->
+			</cac:PartyLegalEntity>
+		</cac:Party>
+	</cac:DeliveryCustomerParty>
+	<cac:DespatchLine>
+		<cbc:ID>1</cbc:ID> <!-- tir16r-046 --> 
+		<cbc:LineStatusCode>01I</cbc:LineStatusCode> <!-- tir16r-r03 Extension -->
+		<cbc:DeliveredQuantity unitCode="KGM">2.202</cbc:DeliveredQuantity> <!-- tir16r-048 -->
+		<cac:OrderLineReference>
+			<cbc:LineID>1</cbc:LineID> <!-- tir16r-051 Syntax krafa -->
+		</cac:OrderLineReference>
+		<cac:Item>
+			<cbc:Name>Gæðavara</cbc:Name> <!-- tir16r-052 Peppol krafa -->
+			<cac:SellersItemIdentification>
+				<cbc:ID>17589683</cbc:ID> <!-- tir16r-053 -->
+			</cac:SellersItemIdentification>
+			<cac:StandardItemIdentification>
+				<cbc:ID schemeID="0160">1234567891234</cbc:ID> <!-- tir16r-055 -->
+			</cac:StandardItemIdentification>
+		</cac:Item>
+	</cac:DespatchLine>
+</DespatchAdvice>

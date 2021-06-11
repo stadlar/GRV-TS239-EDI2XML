@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Order xmlns="urn:oasis:names:specification:ubl:schema:xsd:Order-2"
+			   xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			   xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+	<cbc:CustomizationID>urn:fdc:peppol.eu:poacc:trns:order:3</cbc:CustomizationID> <!-- tir01-001 -->
+	<cbc:ProfileID>urn:fdc:peppol.eu:poacc:bis:order_only:3</cbc:ProfileID>
+	<cbc:ID>PO123456</cbc:ID> <!-- [tir01-003 -->
+	<cbc:IssueDate>2021-04-23</cbc:IssueDate> <!-- tir01-004 -->
+	<cbc:Note>Frjáls texti</cbc:Note>  <!-- tir01-006 -->
+	<cbc:DocumentCurrencyCode>ISK</cbc:DocumentCurrencyCode> <!-- tir01-007 -->
+	<cac:ValidityPeriod>
+		<cbc:EndDate>2021-04-24</cbc:EndDate> <!-- tir01-009 -->
+		</cac:ValidityPeriod>
+	<cac:BuyerCustomerParty>
+		<cac:Party>
+			<cbc:EndpointID schemeID="0088">5699000030473</cbc:EndpointID> <!-- tir01-021 -->
+			<cac:PartyIdentification>
+				<cbc:ID schemeID="0088">5699000030473</cbc:ID> <!-- tir01-022 -->
+			</cac:PartyIdentification>
+			<cac:PostalAddress>
+				<cbc:StreetName>Torgum</cbc:StreetName> <!-- tir01-032 -->
+				<cbc:CityName>Hella</cbc:CityName> <!-- tir01-031 -->
+				<cbc:PostalZone>850</cbc:PostalZone> <!-- tir01-024 -->
+				<cac:Country>
+					<cbc:IdentificationCode>IS</cbc:IdentificationCode> <!-- tir01-033 -->
+				</cac:Country>
+			</cac:PostalAddress>
+			<cac:PartyLegalEntity>
+				<cbc:RegistrationName>Verslun hf.</cbc:RegistrationName> <!-- tir01-044 -->
+			</cac:PartyLegalEntity>
+		</cac:Party>
+	</cac:BuyerCustomerParty>
+	<cac:SellerSupplierParty>
+		<cac:Party>
+			<cbc:EndpointID schemeID="0088">5699000030008</cbc:EndpointID> <!-- tir01-058 -->
+			<cac:PartyIdentification>
+				<cbc:ID schemeID="0088">5699000030008</cbc:ID> <!-- tir01-022 -->
+			</cac:PartyIdentification>
+			<cac:PostalAddress>
+				<cbc:StreetName>Selvogsgrunni 17</cbc:StreetName> <!-- tir01-063 -->
+				<cbc:CityName>Selfoss</cbc:CityName> <!-- tir01-065 -->
+				<cbc:PostalZone>800</cbc:PostalZone> <!-- tir01-068 -->
+				<cac:Country>
+					<cbc:IdentificationCode>IS</cbc:IdentificationCode> <!-- tir01-069 -->
+				</cac:Country>
+			</cac:PostalAddress>
+			<cac:PartyLegalEntity>
+				<cbc:RegistrationName>Vörusalinn hf.</cbc:RegistrationName> <!-- tir01-044 -->
+			</cac:PartyLegalEntity>
+		</cac:Party>
+	</cac:SellerSupplierParty>
+	<cac:AccountingCustomerParty>
+		<cac:Party>
+			<cac:PartyIdentification>
+				<cbc:ID schemeID="0088">5790000435944</cbc:ID> <!-- tir01-156 -->
+			</cac:PartyIdentification>
+			<cac:PostalAddress>
+				<cbc:StreetName>Öngstræti 8</cbc:StreetName> <!-- tir01-p013 -->
+				<cbc:CityName>Grímsey</cbc:CityName> <!-- tir01-p009 -->
+				<cbc:PostalZone>611</cbc:PostalZone> <!-- tir01-p015 -->
+				<cac:Country>
+					<cbc:IdentificationCode>IS</cbc:IdentificationCode> <!-- tir01-p017 -->
+				</cac:Country>
+			</cac:PostalAddress>
+			<cac:PartyLegalEntity>
+				<cbc:RegistrationName>Verslunarskrifstofan ehf.</cbc:RegistrationName> <!-- tir01-0159 -->
+			</cac:PartyLegalEntity>
+		</cac:Party>
+	</cac:AccountingCustomerParty>
+	<cac:Delivery>
+		<cac:DeliveryLocation>
+			<cbc:ID schemeID="0088">5790000435968</cbc:ID> <!-- tir01-0169 -->
+			<cbc:Name>Vöruflutningar</cbc:Name> <!-- tir01-p028 -->
+			<cac:Address>
+				<cbc:StreetName>Hafnargötu 99</cbc:StreetName> <!-- tir01-092 -->
+				<cbc:CityName>Blönduós'</cbc:CityName> <!-- tir01-096 -->
+				<cbc:PostalZone>540</cbc:PostalZone> <!-- tir01-097 -->
+				<cac:Country>
+					<cbc:IdentificationCode>IS</cbc:IdentificationCode> <!-- tir01-098 -->
+				</cac:Country>
+			</cac:Address>
+		</cac:DeliveryLocation>
+		<cac:RequestedDeliveryPeriod>
+			<cbc:EndDate>2021-04-24</cbc:EndDate> <!-- tir01-100 -->
+		</cac:RequestedDeliveryPeriod>
+	</cac:Delivery>
+	<cac:OrderLine>
+		<cac:LineItem>
+			<cbc:ID>1</cbc:ID> <!-- tir01-120 -->
+			<cbc:Quantity unitCode="H87">12</cbc:Quantity> <!-- tir01-132 -->
+			<cac:Item>
+				<cbc:Name>Gæðavaran</cbc:Name> <!-- tir01-135 -->
+				<cac:SellersItemIdentification>
+					<cbc:ID>443405838</cbc:ID> <!-- tir01-p020 -->
+				</cac:SellersItemIdentification>
+				<cac:StandardItemIdentification>
+					<cbc:ID schemeID="0160">0000040058382</cbc:ID> <!-- tir01-136 -->
+				</cac:StandardItemIdentification>
+			</cac:Item>
+		</cac:LineItem>
+	</cac:OrderLine>
+</Order>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+		   xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+		   xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
+	<cbc:CustomizationID>urn:fdc:peppol.eu:poacc:trns:catalogue:3</cbc:CustomizationID> <!-- tir19-006 -->
+	<cbc:ProfileID>urn:fdc:peppol.eu:poacc:bis:catalogue_only:3</cbc:ProfileID>
+	<cbc:ID>catnum01</cbc:ID> <!-- tir19-003 -->
+	<cbc:ActionCode>Add</cbc:ActionCode> <!-- tir19-047 -->
+	<cbc:IssueDate>2020-10-08</cbc:IssueDate> <!-- tir19-006 -->
+	<cbc:VersionID>2.0</cbc:VersionID>
+	<cac:ValidityPeriod>
+		<cbc:StartDate>2020-10-08</cbc:StartDate> <!-- peppolkrafa -->
+	</cac:ValidityPeriod>
+	<cac:ProviderParty>
+		<cbc:EndpointID schemeID="0088">5699000030275</cbc:EndpointID> <!-- tir19-009 -->
+		<cac:PartyIdentification>
+			<cbc:ID schemeID="0088">5699000030275</cbc:ID> <!-- tir19-010 -->
+		</cac:PartyIdentification>
+		<cac:PostalAddress>
+			<cbc:StreetName>Selvogsgrunni 17</cbc:StreetName> <!-- tir19-p029a -->
+			<cbc:CityName>Selfoss.</cbc:CityName> <!-- tir19-p029c -->
+			<cbc:PostalZone>800</cbc:PostalZone> <!-- tir19-p029d -->
+			<cac:Country>
+				<cbc:IdentificationCode>IS</cbc:IdentificationCode> <!-- tir19-p029f -->
+			</cac:Country>
+		</cac:PostalAddress>
+		<cac:PartyLegalEntity> 
+			<cbc:RegistrationName>Vörusalinn hf.</cbc:RegistrationName> <!-- tir19-011 -->
+		</cac:PartyLegalEntity>
+	</cac:ProviderParty>
+	<cac:ReceiverParty> 
+		<cbc:EndpointID schemeID="0088">5699000021396</cbc:EndpointID> <!-- tir19-012 -->
+		<cac:PartyIdentification>
+			<cbc:ID schemeID="0088">5699000021396</cbc:ID> <!-- tir19-013 -->
+		</cac:PartyIdentification>
+		<cac:PostalAddress>
+			<cbc:StreetName>Aðalgötu 108</cbc:StreetName> <!-- tir19-p031a -->
+			<cbc:CityName>Reykjavík.</cbc:CityName> <!-- tir19-p031c -->
+			<cbc:PostalZone>101</cbc:PostalZone> <!-- tir19-p031d -->
+			<cac:Country>
+				<cbc:IdentificationCode>IS</cbc:IdentificationCode> <!-- tir19-p029f -->
+			</cac:Country>
+		</cac:PostalAddress>
+		<cac:PartyLegalEntity>
+			<cbc:RegistrationName>Verslunin hf.</cbc:RegistrationName> <!-- tir19-014 -->
+		</cac:PartyLegalEntity>
+	</cac:ReceiverParty>
+	<cac:CatalogueLine>
+		<cbc:ID>1</cbc:ID> <!-- tir19-032 -->
+		<cbc:ActionCode>Update</cbc:ActionCode> <!-- tir19-033 -->
+		<cbc:OrderableUnit>H87</cbc:OrderableUnit> <!-- tir19-035 -->
+		<cac:RequiredItemLocationQuantity>
+			<cac:Price>
+				<cbc:PriceAmount currencyID="ISK">25686.55</cbc:PriceAmount> <!-- tir19-051 -->
+				<cbc:BaseQuantity unitCode="H87">1</cbc:BaseQuantity> <!-- tir19-p024 -->
+				<cbc:PriceType>NTP</cbc:PriceType> <!-- tir19-093 -->
+			</cac:Price>
+		</cac:RequiredItemLocationQuantity>
+		<cac:Item>
+			<cbc:PackQuantity unitCode="XCS">20</cbc:PackQuantity> <!-- tir19-066 -->
+			<cbc:Name>Gæðavara 950ML</cbc:Name> <!-- tir19-078 -->
+			<cac:SellersItemIdentification>
+				<cbc:ID>987645</cbc:ID> <!-- tir19-091 -->
+			</cac:SellersItemIdentification>
+			<cac:StandardItemIdentification>
+				<cbc:ID schemeID="0160">1234567890123</cbc:ID> <!-- tir19-092 -->
+			</cac:StandardItemIdentification>
+			<cac:ClassifiedTaxCategory>
+				<cbc:ID>S</cbc:ID> <!-- tir19-094 -->
+				<cbc:Percent>11</cbc:Percent> <!-- tir19-050 -->
+				<cac:TaxScheme>
+					<cbc:ID>VAT</cbc:ID> <!-- tir19-094 -->
+				</cac:TaxScheme>
+			</cac:ClassifiedTaxCategory>
+			<cac:Dimension>
+				<cbc:AttributeID>AAF</cbc:AttributeID> <!-- tir19-104 -->
+				<cbc:Measure unitCode="KGM">50</cbc:Measure> <!-- tir19-098 -->
+			</cac:Dimension>
+		</cac:Item>
+	</cac:CatalogueLine>
+</Catalogue>

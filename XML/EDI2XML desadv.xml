@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DespatchAdvice xmlns="urn:oasis:names:specification:ubl:schema:xsd:DespatchAdvice-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2">
+	<cbc:CustomizationID>urn:fdc:peppol.eu:poacc:trns:despatch_advice:3</cbc:CustomizationID>  <!-- tir16r-002 -->
+	<cbc:ProfileID>urn:fdc:peppol.eu:poacc:bis:despatch_advice:3</cbc:ProfileID>
+	<cbc:ID>89307098</cbc:ID> <!-- tir16r-003 -->
+	<cbc:IssueDate>2020-12-10</cbc:IssueDate> <!-- tir16-004 -->
+	<cac:OrderReference>
+		<cbc:ID>PO012345</cbc:ID> <!-- tir16-006 -->
+	</cac:OrderReference>
+	<cac:DespatchSupplierParty>
+		<cac:Party>
+			<cbc:EndpointID schemeID="0088">7300010000001</cbc:EndpointID> <!-- tir16-071 -->
+			<cac:PartyIdentification>
+				<cbc:ID schemeID="0088">7300010000001</cbc:ID>  <!-- tir16-p001 -->
+			</cac:PartyIdentification>
+			<cac:PartyLegalEntity>
+				<cbc:RegistrationName>Vörusalinn ehf</cbc:RegistrationName> <!-- tir16-007 Peppol krafa -->
+			</cac:PartyLegalEntity>
+		</cac:Party>
+	</cac:DespatchSupplierParty>
+	<cac:DeliveryCustomerParty>
+		<cac:Party>
+			<cbc:EndpointID schemeID="0088">5798000000124</cbc:EndpointID> <!-- tir16-016 -->
+			<cac:PartyIdentification>
+				<cbc:ID schemeID="0088">5790000435951</cbc:ID> <!-- tir16-015 -->
+			</cac:PartyIdentification>
+			<cac:PartyLegalEntity>
+				<cbc:RegistrationName>Verslunin ehf.</cbc:RegistrationName> <!-- tir16-014 Peppol krafa -->
+			</cac:PartyLegalEntity>
+		</cac:Party>
+	</cac:DeliveryCustomerParty>
+	<cac:Shipment>
+		<cbc:ID>5794000000123</cbc:ID> <!-- workaround -->
+		<cac:Delivery>
+			<cac:Despatch>
+				<cbc:ActualDespatchDate>2016-08-16</cbc:ActualDespatchDate> <!-- tir16-072 -->
+			</cac:Despatch>
+		</cac:Delivery>
+	</cac:Shipment>
+	<cac:DespatchLine>
+		<cbc:ID>1</cbc:ID> <!-- tir16-046 --> 
+		<cbc:DeliveredQuantity unitCode="KGM">2.202</cbc:DeliveredQuantity> <!-- tir16-048 -->
+		<cac:OrderLineReference>
+			<cbc:LineID>1</cbc:LineID> <!-- tir16-051 Syntax krafa -->
+			<cac:OrderReference>
+				<cbc:ID>787172</cbc:ID> <!-- tir16-p010 Syntax krafa -->
+			</cac:OrderReference>
+		</cac:OrderLineReference>
+		<cac:Item>
+			<cbc:Name>Gæðavara</cbc:Name> <!-- tir16-052 Peppol krafa -->
+			<cac:SellersItemIdentification>
+				<cbc:ID>17589683</cbc:ID> <!-- tir16-053 -->
+			</cac:SellersItemIdentification>
+			<cac:StandardItemIdentification>
+				<cbc:ID schemeID="0160">1234567891234</cbc:ID> <!-- tir16-055 -->
+			</cac:StandardItemIdentification>
+		</cac:Item>
+	</cac:DespatchLine>
+</DespatchAdvice>
+
+
+

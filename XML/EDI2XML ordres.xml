@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<OrderResponse xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderResponse-2"
+			   xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			   xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+	<cbc:CustomizationID>urn:fdc:peppol.eu:poacc:trns:order_response:3</cbc:CustomizationID> <!-- tir76-001 -->
+	<cbc:ProfileID>urn:fdc:peppol.eu:poacc:bis:ordering:3</cbc:ProfileID>
+	<cbc:ID>96121371</cbc:ID> <!-- tir76-003 -->
+	<cbc:IssueDate>2020-12-09</cbc:IssueDate> <!-- tir76-004 -->
+	<cbc:OrderResponseCode>AP</cbc:OrderResponseCode> <!-- tir76-200 -->
+	<cbc:DocumentCurrencyCode>ISK</cbc:DocumentCurrencyCode> <!-- tir76-007 -->
+	<cac:OrderReference>
+		<cbc:ID>PO123456</cbc:ID> <!-- tir76-011 -->
+	</cac:OrderReference>
+	<cac:SellerSupplierParty>
+		<cac:Party>
+			<cbc:EndpointID schemeID="0088">5699000030008</cbc:EndpointID> <!-- tir76-058 -->
+			<cac:PartyIdentification>
+				<cbc:ID schemeID="0088">5699000030008</cbc:ID> <!-- tir76-059 -->
+			</cac:PartyIdentification>
+			<cac:PartyLegalEntity>
+				<cbc:RegistrationName>Vörusalinn hf.</cbc:RegistrationName> <!-- tir76-060 -->
+			</cac:PartyLegalEntity>
+		</cac:Party>
+	</cac:SellerSupplierParty>
+	<cac:BuyerCustomerParty>
+		<cac:Party>
+			<cbc:EndpointID schemeID="0088">5699000030473</cbc:EndpointID> <!-- tir76-210 -->
+			<cac:PartyIdentification>
+				<cbc:ID schemeID="0088">5699000030473</cbc:ID> <!-- tir76-022 -->
+			</cac:PartyIdentification>
+			<cac:PartyLegalEntity>
+				<cbc:RegistrationName>Verslunin hf.</cbc:RegistrationName> <!-- tir76-023 -->
+			</cac:PartyLegalEntity>
+		</cac:Party>
+	</cac:BuyerCustomerParty>
+	<cac:OrderLine>
+		<cac:LineItem>
+			<cbc:ID>1</cbc:ID> <!-- tir76-120 -->
+			<cbc:LineStatusCode>5</cbc:LineStatusCode> <!-- tir76-202 -->
+			<cbc:Quantity unitCode="H87">12</cbc:Quantity> <!-- tir76-132 -->
+			<cac:Item>
+				<cbc:Name>Gæðavaran</cbc:Name> <!-- tir76-205 -->
+				<cac:SellersItemIdentification>
+					<cbc:ID>443405838</cbc:ID> <!-- tir76-206 -->
+				</cac:SellersItemIdentification>
+				<cac:StandardItemIdentification>
+					<cbc:ID schemeID="0160">0000040058382</cbc:ID> <!-- tir76-207 -->
+				</cac:StandardItemIdentification>
+			</cac:Item>
+		</cac:LineItem>
+		<cac:OrderLineReference>
+			<cbc:LineID>11</cbc:LineID> <!-- tir76-201 -->
+		</cac:OrderLineReference>
+	</cac:OrderLine>
+</OrderResponse>
