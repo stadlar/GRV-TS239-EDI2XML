@@ -5,4 +5,4 @@ EDI2XML möppun fimm verslunarskeyta
 
 * EDI skeytadæmi sem notðuð eru í tækniforskriftinni.
 * XML skeytadæmi sem notuð eru í tækniforskriftinni.
-* Prófuanrskrá (schematron) til að prófa Endursendingarskeyt (RETANN)
+* Prófunarskrá (schematron) til að prófa Endursendingarskeyt (RETANN)
